@@ -1,0 +1,10 @@
+{
+  "name": "suraj-portfolio-root",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "cd suraj-3d-portfolio-profile-photo/3d-portfolio-main && npm install && npm run build",
+    "dev": "cd suraj-3d-portfolio-profile-photo/3d-portfolio-main && npm run dev"
+  }
+}
