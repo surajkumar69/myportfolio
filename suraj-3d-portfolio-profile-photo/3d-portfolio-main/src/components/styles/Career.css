@@ -1,0 +1,250 @@
+.career-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  opacity: 1;
+  height: auto;
+  margin: auto;
+  margin-bottom: 180px;
+  padding: 120px 0px;
+  width: 100%;
+}
+
+.career-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.career-section h2 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  text-align: center;
+  background: linear-gradient(0deg, #0d9488, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.career-section h2 > span {
+  font-family: "Geist", sans-serif;
+  font-weight: 300;
+}
+
+.career-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.career-info-box {
+  display: grid;
+  grid-template-columns: 1fr 200px 1.5fr;
+  column-gap: 40px;
+  align-items: start;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.career-role {
+  text-align: left;
+}
+
+.career-role h4 {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.career-role h5 {
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 8px 0 0 0;
+  color: var(--accentColor);
+}
+
+.career-duration {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.career-duration h3 {
+  font-size: 38px;
+  margin: 0;
+  font-weight: 600;
+  line-height: 38px;
+  color: #ffffff;
+  background-color: #0a0e17;
+  padding: 4px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.career-desc {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.career-desc p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+  color: #d1d5db;
+}
+
+.career-desc a {
+  font-size: 15px;
+  color: var(--accentColor);
+  text-decoration: underline;
+  width: fit-content;
+}
+
+.career-timeline {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: calc(100% + 30px);
+  background-image: linear-gradient(
+    to top,
+    #14b8a6 20%,
+    var(--accentColor) 50%,
+    transparent 95%
+  );
+  max-height: 0%;
+  z-index: 1;
+}
+
+.career-dot {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #14b8a6;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 8px #5eead4,
+    0px 0px 110px 20px #a5f3fc;
+  animation: timeline 0.8s linear infinite forwards;
+}
+
+@keyframes timeline {
+  10%,
+  20%,
+  50%,
+  70%,
+  90% {
+    box-shadow: 0px 0px 5px 2px #67e8f9;
+  }
+  10%,
+  30%,
+  0%,
+  100%,
+  64%,
+  80% {
+    box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 5px #5eead4,
+      0px 0px 110px 20px #a5f3fc;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .career-info-box {
+    grid-template-columns: 1fr 160px 1.4fr;
+    column-gap: 24px;
+  }
+
+  .career-role h4 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .career-duration h3 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .career-section {
+    padding: 60px 0;
+    margin-bottom: 60px;
+  }
+
+  .career-section h2 {
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 50px;
+  }
+
+  .career-info-box {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding-left: 35px;
+    margin-bottom: 50px;
+  }
+
+  .career-duration {
+    justify-content: flex-start;
+  }
+
+  .career-duration h3 {
+    font-size: 28px;
+    line-height: 32px;
+    padding: 0;
+  }
+
+  .career-timeline {
+    left: 10px;
+    transform: none;
+  }
+
+  .career-dot {
+    left: 1px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .career-section h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .career-role h4 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .career-role h5 {
+    font-size: 16px;
+  }
+
+  .career-duration h3 {
+    font-size: 24px;
+  }
+
+  .career-desc p {
+    font-size: 15px;
+  }
+}

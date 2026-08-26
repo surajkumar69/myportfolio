@@ -1,0 +1,161 @@
+.certification-section {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto 180px;
+  padding: 100px 0;
+}
+
+.certification-heading {
+  margin-bottom: 55px;
+}
+
+.certification-heading p {
+  margin: 0 0 12px;
+  color: var(--accentColor);
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.certification-heading h2 {
+  margin: 0;
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: .95;
+  font-weight: 400;
+  background: linear-gradient(0deg, #0d9488, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.certification-heading h2 span {
+  font-family: "Geist", sans-serif;
+  font-weight: 300;
+}
+
+.certification-card {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 55px;
+  align-items: center;
+  padding: 35px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.025);
+  box-shadow: 0 30px 80px rgba(0,0,0,.2);
+}
+
+.certification-copy h3 {
+  margin: 20px 0 8px;
+  font-size: 36px;
+  line-height: 1.05;
+  font-weight: 500;
+}
+
+.certification-copy h4 {
+  margin: 0 0 22px;
+  color: var(--accentColor);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.certification-copy p {
+  max-width: 520px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.certification-badge {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid rgba(255,255,255,.3);
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.certification-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.certification-meta div {
+  padding-top: 15px;
+  border-top: 1px dashed rgba(255,255,255,.3);
+}
+
+.certification-meta span,
+.certification-meta strong {
+  display: block;
+}
+
+.certification-meta span {
+  margin-bottom: 6px;
+  font-size: 11px;
+  opacity: .55;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.certification-meta strong {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.certificate-preview {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.2);
+  background: #fff;
+}
+
+.certificate-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform .5s ease;
+}
+
+.certificate-preview:hover img {
+  transform: scale(1.025);
+}
+
+.certificate-preview span {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  padding: 9px 13px;
+  background: rgba(0,0,0,.85);
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: .5px;
+}
+
+@media (max-width: 900px) {
+  .certification-card {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 22px;
+  }
+
+  .certification-meta {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .certification-section {
+    width: calc(100% - 25px);
+    padding: 70px 0;
+    margin-bottom: 80px;
+  }
+
+  .certification-copy h3 {
+    font-size: 29px;
+  }
+
+  .certification-copy p {
+    font-size: 15px;
+  }
+}
