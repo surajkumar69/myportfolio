@@ -98,7 +98,7 @@ const SocialIcons = () => {
         </span>
         <span>
           <a
-            href="https://www.instagram.com/leftbraincoder/"
+            href="https://www.instagram.com/kumarsuraj2417?stkn=MWI5dHIwMXBhMGtudQ=="
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram Profile"

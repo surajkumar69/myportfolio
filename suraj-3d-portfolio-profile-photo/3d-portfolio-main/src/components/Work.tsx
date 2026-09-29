@@ -10,6 +10,11 @@ const projects = [
   ["Jyotii Setu", "Spiritual Services Platform", "Vedic astrology • Numerology • Tarot • Consultation booking", "https://www.jyotiisetu.com/"],
   ["RS Unisex Salon", "Salon & Beauty Business", "Modern business website • Service showcase • Customer enquiries", "https://rsunisexsalon.online/"],
   ["Aman Sahani Crane Services", "Crane Rental & Services", "Service showcase • Equipment rental • Business enquiries", "https://amansahanicraneservices.online/"],
+  ["S.L Travels", "Travel & Tourism", "Travel packages • Responsive design • Business showcase", "https://sltravels.online/"],
+  ["Zara Tours and Travels", "Travel & Tourism", "Tour packages • Travel booking • Responsive UI", "https://www.zaratoursandtravels.in/"],
+  ["Acharya Ashirwad Consultancy", "Consultancy Services", "Professional consultancy • Business showcase • Contact integration", "https://acharyaashirwadconsultancy.online/"],
+  ["North East Tours and Travel", "Travel & Tourism", "Tour packages • Travel booking • Business showcase", "https://northeasttoursandtravel.in/"],
+  ["Maithilli Agro Tourism", "Agro Tourism", "Farm showcase • Ecotourism • Responsive UI", "https://maithilli-agro-torism-fx91.vercel.app/"],
 ] as const;
 
 

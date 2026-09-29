@@ -109,7 +109,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://www.instagram.com/leftbraincoder/"
+            href="https://www.instagram.com/kumarsuraj2417?stkn=MWI5dHIwMXBhMGtudQ=="
             target="_blank"
             rel="noopener noreferrer"
             className="contact-btn contact-btn-social"
